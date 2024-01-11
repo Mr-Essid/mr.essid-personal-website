@@ -42,9 +42,9 @@ nav {
     display: flex;
     align-content: center;
     justify-content: space-between;
-
-
 }
+
+
 
 
 .header-nav {
@@ -165,6 +165,13 @@ nav.hidden {
 }
 
 
+@media screen and (max-width: 540px) {
+    .landing-page .image-landing-page {
+        display: none;
+    }
+
+}
+
 
 .landing-page img {
     max-width: 100%;
@@ -186,6 +193,7 @@ nav.hidden {
 
 .landing-page .content-description {
     font-size: 1.5rem;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
@@ -423,9 +431,16 @@ nav.hidden {
 
 .project {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 2rem;
     margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .project {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 .project img {
@@ -451,6 +466,7 @@ nav.hidden {
 .project .icons-links {
     margin-top: 10px;
     margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .project .icons-links a {
@@ -527,6 +543,7 @@ nav.hidden {
     grid-template-columns: 1fr 2fr;
     column-gap: 2rem;
     align-items: end;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {
